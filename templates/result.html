@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='dibe.ico') }}">
+		
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        
+	</head>
+
+    <body style="background-color:papayawhip;">
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font"><p style="font-family:Lucida Sans Typewriter">Movies Recommendation</p></span></h2>
+            
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{%for i in range(0, 5)%}
+  
+               <li>{{prediction[i]}}</li>
+            {%endfor%}
+		</div>
+
+		<!-- Footer -->
+       
+
+	</body>
+</html>
